@@ -1,0 +1,242 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+body {
+  background-color: #f7f9fc;
+  color: #333;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  text-align: center;
+  color: #1e1e32;
+  margin-bottom: 25px;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.card {
+  background-color: #f0f4f8;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.card p {
+  margin: 5px 0 0;
+  font-size: 28px;
+  font-weight: 600;
+  color: #1e1e32;
+}
+
+.progress-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-bar-container {
+  width: 80%;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 10px;
+  margin-top: 8px;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #4CAF50;
+  transition: width 0.4s ease-in-out;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.filter-buttons button {
+  background-color: #e6e8eb;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.filter-buttons button.active {
+  background-color: #1e1e32;
+  color: #fff;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+form input {
+  flex-grow: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+form button {
+  padding: 12px 20px;
+  background-color: #1e1e32;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #333;
+}
+
+.questions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.question-item {
+  background-color: #fdfdfd;
+  border: 1px solid #eee;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.question-item .content {
+  flex-grow: 1;
+}
+
+.question-item h4 {
+  margin: 0 0 5px;
+  font-size: 18px;
+}
+
+.question-item a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.question-item a:hover {
+  text-decoration: underline;
+}
+
+.question-item .actions {
+  display: flex;
+  gap: 10px;
+}
+
+.question-item .actions button {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.question-item .actions .complete-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+.question-item .actions .complete-btn.completed {
+  background-color: #e6e8eb;
+  color: #333;
+}
+
+.question-item .actions .review-btn {
+  background-color: #f0ad4e;
+  color: white;
+}
+.question-item .actions .review-btn.reviewed {
+  background-color: #e6e8eb;
+  color: #333;
+}
+
+.question-item .actions .delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.auth-container {
+    padding: 50px;
+    text-align: center;
+}
+
+.auth-container form {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.auth-container input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.toggle-auth {
+    margin-top: 15px;
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.logout-btn {
+    padding: 8px 16px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
