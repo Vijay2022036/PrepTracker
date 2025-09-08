@@ -327,27 +327,63 @@ form button:hover {
     font-size: 0.9rem;
 }
 
-/* Responsive adjustments */
-@media (max-width: 600px) {
-    .container {
-        padding: 20px;
-    }
-    h1 {
-        font-size: 2rem;
-    }
-    .header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
-    }
-    .logout-btn {
-        width: 100%;
-    }
-    .dashboard {
-        grid-template-columns: 1fr;
-    }
-    form {
-        flex-direction: column;
-        gap: 10px;
-    }
+/* ------------------------------------------- */
+/* Responsive Design (Media Queries) */
+/* ------------------------------------------- */
+
+/* Adjustments for screens smaller than 768px (common for tablets) */
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+  .container {
+    padding: 20px;
+  }
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .logout-btn {
+    width: 100%;
+  }
+  .dashboard {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  form {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .question-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 15px;
+  }
+  .question-item .actions {
+    margin-left: 0;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+/* Further adjustments for extra small screens (phones) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  .card p {
+    font-size: 1.75rem;
+  }
+  form input, form button {
+    font-size: 0.9rem;
+  }
+  .filter-buttons button {
+    font-size: 0.8rem;
+    padding: 8px 16px;
+  }
 }
